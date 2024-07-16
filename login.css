@@ -1,9 +1,9 @@
   body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #1e0929;
+      background: #000102;
       color: white;
-      background-image: url(/images/banner/topbanner.png);
+      /* background-image: url(/images/banner/topbanner.png); */
       background-repeat: no-repeat;
       background-size: 35% 8%;
       position: relative;
@@ -109,10 +109,11 @@
     display: flex;
     align-items: center;
     padding: 2rem 0;
+    text-align: center;
   }
 
   .content {
-    flex: 1;
+    /* flex: 1; */
     padding-right: 2rem;
   }
 
@@ -226,25 +227,15 @@
     animation: float 5s infinite ease-in-out;
   }
 
-  .c1 { top: 15%; left: 10%; }
+  .c1 { top: 10%; left: 10%; }
   .c2 { top: 20%; right: 20%; }
-  .c3 { bottom: 30%; left: 20%; }
+  .c3 { bottom: 30%; left: 30%; }
   .c4 { bottom: 10%; right: 10%; }
   .c5 { top: 50%; right: 40%; }
 
   @keyframes float {
-    0%, 100% {
-    transform: translateY(0) rotateY(0); /* Initial and final state */
-  }
-  25% {
-    transform: translateY(-20px) rotateY(0deg); /* Start rising, no flip */
-  }
-  50% {
-    transform: translateY(0) rotateY(180deg); /* Flip at the peak */
-  }
-  75% {
-    transform: translateY(20px) rotateY(0deg); /* Descend, no flip */
-  }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
   }
 
   @media (max-width: 768px) {

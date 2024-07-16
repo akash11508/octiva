@@ -17,7 +17,7 @@
       integrity="sha512-EXAMPLEHASH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/login.css" />
     <title>Octiva</title>
   </head>
   <body>
@@ -50,7 +50,31 @@
         </ul>
       </nav>
     </header>
-    <section>
+    <style>
+      .newHeroSection {
+        background-image: url(/images/banner/newBanner.png);
+        /* background-size: 100% contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        background-color: #000000c4;
+        background-blend-mode: overlay;
+        min-height: 90vh; */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-block: 13em;
+      }
+      .secoundaryBtn {
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+    <section class="newHeroSection">
       <section>
         <div class="container">
           <div class="heroSection">
@@ -65,48 +89,12 @@
                 offering secure and efficient digital payment and trading
                 platforms.
               </p>
-              <div class="buttons">
+              <div class="buttons secoundaryBtn">
                 <button class="btn login">
                   <span>Login</span>
                 </button>
                 <button class="btn register">REGISTER</button>
               </div>
-            </div>
-            <div class="visuals">
-              <div class="phone-container">
-                <img src="./Images/hero/mobile.png" alt="Phone" class="phone" />
-                <img src="./Images/hero/dsdg.png" alt="Octiva" class="mobile" />
-              </div>
-              <img
-                src="./Images/hero/coin.png"
-                alt="Dollar Symbol"
-                class="symbol dollar-symbol"
-              />
-              <img
-                src="./Images/hero/coin.png"
-                alt="Floating Coin 1"
-                class="floating-circle c1"
-              />
-              <img
-                src="./Images/hero/coin.png"
-                alt="Floating Coin 2"
-                class="floating-circle c2"
-              />
-              <img
-                src="./Images/hero/coin.png"
-                alt="Floating Coin 3"
-                class="floating-circle c3"
-              />
-              <img
-                src="./Images/hero/coin.png"
-                alt="Floating Coin 4"
-                class="floating-circle c4"
-              />
-              <img
-                src="./Images/hero/coin.png"
-                alt="Floating Coin 5"
-                class="floating-circle c5"
-              />
             </div>
           </div>
         </div>
